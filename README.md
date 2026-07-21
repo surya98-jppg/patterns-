@@ -20,3 +20,16 @@ output
 @@@@@@
 @@@@@@
 @@@@@@
+
+# Half pyramid
+n=int(input("enter a number"))
+for i in range(n):
+    for j in range(i+1):             when row =0 stars =1 means i=0 outer (inner = i+1) 
+        print("*",end = "")
+    print()
+output
+*
+**
+***
+****
+*****
