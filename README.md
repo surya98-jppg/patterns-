@@ -24,12 +24,18 @@ output
 # Half pyramid
 n=int(input("enter a number"))
 for i in range(n):
-    for j in range(i+1):             when row =0 stars =1 means i=0 outer (inner = i+1) 
-        print("*",end = "")
-    print()
+    for j in range(i+1):
+        print(i+1,end = "")             when we want output in alphabtes use char(65+i) means
+    print()                             char(65) is A that's why
 output
-*
-**
-***
-****
-*****
+1
+22
+333
+4444
+55555
+output 2
+1
+12
+123           if we want his chane i+1 to j+1
+1234
+
