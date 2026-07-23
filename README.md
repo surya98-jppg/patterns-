@@ -45,7 +45,24 @@ for i in range(n):                   in this if i=0 it prints 4 stars then i inc
         print("*",end="")           when i=0 inner loop runs n time upto the condition is false and prints the stars 
     print()
  output                           if we want 5555 4444,333 we use n-i to print
- ****  
-***                                 j has values 0 1 2 3 in the program first inner executes the code inside it
-**
+****  
+***                                 j has values 0 1 2 3 in the program first inner executes the    **                                    code inside it
 *
+# full pyramid
+n=5
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ",end="")
+    for j in range(2*i+1):
+           if i==n-1:
+            print("+",end="")
+           else:
+               print("*",end="")
+    print()
+ouput
+   *                                    if we want specific to print another we use this
+   ***
+  *****
+ *******
++++++++++
+
