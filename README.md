@@ -46,7 +46,7 @@ for i in range(n):                   in this if i=0 it prints 4 stars then i inc
     print()
  output                           if we want 5555 4444,333 we use n-i to print
 ****  
-***                                 j has values 0 1 2 3 in the program first inner executes the    **                                    code inside it
+***                                 j has values 0 1 2 3 in the program first inner executes the                       **                                code inside it
 *
 # full pyramid
 n=5
@@ -66,3 +66,60 @@ ouput
  *******
 +++++++++
 
+# Reverse half pyramid
+n=int(input("ennter a number"))
+for i in range(n):
+    for j in range(i):
+        print(" ",end="")
+    for j in range(2*(n-i)-1):
+          print(2*(n-i)-1,end="")
+    print()
+output:
+999999999
+ 7777777
+  55555
+   333
+    1
+# Diamond pattern
+n=5
+#for top pattern
+for i in range(n):
+    for j in range(n-i-1):
+      print(" ",end="")
+    for j in range(2*i+1):
+        print(chr(65+i),end="")
+    print()
+#for bottom
+for i in range(1,n):
+    for j in range(i):
+        print(" ",end="")
+    for j in range(2*(n-i)-1):
+        print(chr(65+n-i-1),end="")
+    print()
+ 
+#to avoid printing of last row in top twotimes we start thr bottom loop from (1,n) instead of (0,n)
+output:-
+    A
+   BBB
+  CCCCC
+ DDDDDDD
+EEEEEEEEE
+ DDDDDDD
+  CCCCC
+   BBB
+    A
+# hollow case
+n=int(input("enter  number"))
+for i in range(n):
+     for j in range(n):
+         if i==0 or i==n-1 or j==0 or j==n-1:
+             print("*",end="")
+         else:
+             print(" ",end="")
+     print()
+     # first assume a matrix of hollow sqaure  print the stars where stars present otherwise print spaces
+output:
+****
+*  *
+*  *
+****
