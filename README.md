@@ -66,7 +66,7 @@ ouput
  *******
 +++++++++
 
-# Reverse half pyramid
+# Reverse  pyramid
 n=int(input("ennter a number"))
 for i in range(n):
     for j in range(i):
@@ -108,7 +108,7 @@ EEEEEEEEE
   CCCCC
    BBB
     A
-# hollow case
+# hollow sqaure
 n=int(input("enter  number"))
 for i in range(n):
      for j in range(n):
