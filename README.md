@@ -21,7 +21,7 @@ output
 @@@@@@
 @@@@@@
 
-# Half pyramid
+# Half pyramid(floyd's triangle)
 n=int(input("enter a number"))
 for i in range(n):
     for j in range(i+1):
@@ -48,7 +48,7 @@ for i in range(n):                   in this if i=0 it prints 4 stars then i inc
 ****  
 ***                                 j has values 0 1 2 3 in the program first inner executes the                       **                                code inside it
 *
-# full pyramid
+# full pyramid(pascals triangle)
 n=5
 for i in range(n):
     for j in range(n-i-1):
@@ -123,3 +123,51 @@ output:
 *  *
 *  *
 ****
+# Hollow pyramid
+n=5
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ",end="")
+    for j in range(2*i+1):                    in this j=0 prints firsr and j=2*i prints last coloumn
+        if j==0 or j==2*i or i==n-1:
+            print(chr(65+i),end="")
+        else:
+            print(" ",end="")
+    print()
+outut
+   A
+   B B
+  C   C
+ D     D
+EEEEEEEEE
+
+# Butterfly pattern
+n=int(input("enter a number"))
+for i in range(n):
+    
+    for j in range(i+1):
+        print("*",end=" ")
+    for j in range(2*(n-i-1)):
+        print(" ",end=" ")
+    for j in range(i+1):
+        print("*",end=" ")
+    print()
+    
+for i in range(1,n):                                          divide the pattern into two halves then check what to print
+    
+    for j in range(n-i):
+        print("*",end=" ")
+    for j in range(2*i):
+        print(" ",end=" ")
+    for j in range(n-i):
+        print("*",end=" ")
+    print()
+
+output
+*             * 
+* *         * * 
+* * *     * * * 
+* * * * * * * * 
+* * *     * * * 
+* *         * * 
+*             * 
