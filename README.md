@@ -171,3 +171,35 @@ output
 * * *     * * * 
 * *         * * 
 *             * 
+
+# Hollow Diamond
+ n=5
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ",end="")
+    for j in range(2*i+1):
+        if j==0 or j==2*i:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+
+for i in range(1,n):
+    for j in range(i):
+        print(" ",end="")
+    for j in range(2*(n-i)-1):
+        if j==0 or j==2*(n-i)-2:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+output
+    *
+   * *
+  *   *
+ *     *                     for leading spaces we use the first j loop for spaces inside the diamond we use the second j loop
+*       *
+ *     *
+  *   *
+   * *
+    *
