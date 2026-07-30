@@ -60,7 +60,7 @@ for i in range(n):
                print("*",end="")
     print()
 ouput
-   *                                    if we want specific to print another we use this
+    *                                    if we want specific to print another we use this
    ***
   *****
  *******
@@ -202,4 +202,34 @@ output
  *     *
   *   *
    * *
-    *
+    *  
+# Floyod triangle
+n=int(input("enter a number"))
+num=1
+for i in range(n):
+    for j in range(i+1):
+        print(num,end=" ")
+        num+=1
+    print()
+floyd's Triangle is a number pattern in which consecutive numbers are printed in a triangular form, with the i-th row containing i numbers (or i+1 numbers if using 0-based indexing), and the numbers continue without resetting.
+output:-
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+# reverse floyd triangle
+n=int(input("enter a number"))
+total=n*(n+1)//2
+current=total
+for i in range(n,0,-1):
+    for j in range(i):
+        print(current,end=" ")
+        current-=1
+    print()
+output
+15 14 13 12 11 
+10 9 8 7 
+6 5 4 
+3 2 
+1 
