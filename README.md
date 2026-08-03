@@ -233,3 +233,37 @@ output
 6 5 4 
 3 2 
 1 
+# Pascal Triangle
+n=4
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ",end="")
+    value=2
+    for j in range(i+1):
+      print(value,end="")
+      value=value*(i-j)//(j+1)
+    print()
+output:
+   1
+   11
+  121
+ 1331
+14641
+# reverse pascal triangle
+n = int(input("Enter rows: "))
+for i in range(n):
+    for j in range(2*i):
+        print(" ",end="")
+    row=n-i-1
+    value=1
+    for j in range(row+1):
+        print(value,end="")
+        value=value*(row-j)//(j+1)
+    print()
+output:
+14641
+  1331
+    121
+      11
+        1
+
