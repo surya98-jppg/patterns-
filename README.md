@@ -266,4 +266,19 @@ output:
     121
       11
         1
+# Alphabet floyod triangle
+n=int(input("enter a number"))
+ch=65
+for i in range(n):
+     for j in range(i+1):
+         print(chr(ch),end="")
+         ch+=1
+     print()
+output:
+A 
+B C 
+D E F 
+G H I J 
+K L M N O
 
+        
