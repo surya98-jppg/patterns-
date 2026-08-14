@@ -294,7 +294,7 @@ ABA
 ABCBA
 ABCDCBA
 ABCDEDCBA
-# Centered aplhabet palindromic pyramid
+# Centered aplhabet palindromic pyramid(repeation of alphabet pattern)
 n=5
 for i in range(n):
     for j in range(n-i-1):
@@ -310,8 +310,22 @@ output:
   ABCBA
  ABCDCBA
 ABCDEDCBA
-
-
+# Inverted centered palindromic alphabet pyramid
+n=int(input("enter a number"))
+for i in range(n):
+    for j in range(i):
+        print(" ",end="")
+    for j in range(n-i):
+        print(chr(65+j),end=" ")
+    for j in range(n-i-2,-1,-1):
+        print(chr(65+j),end=" ")
+    print()
+output:
+A B C D E D C B A 
+ A B C D C B A 
+  A B C B A 
+   A B A 
+     A 
 
 
         
