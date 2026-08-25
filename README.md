@@ -44,9 +44,9 @@ for i in range(n):                   in this if i=0 it prints 4 stars then i inc
     for j in range(n-i):
         print("*",end="")           when i=0 inner loop runs n time upto the condition is false and prints the stars 
     print()
- output                           if we want 5555 4444,333 we use n-i to print
+output                               if we want 5555 4444,333 we use n-i to print
 ****  
-***                                 j has values 0 1 2 3 in the program first inner executes the                       **                                code inside it
+***                                 j has values 0 1 2 3 in the program first inner executes the                       **                                code      **                                    inside it
 *
 # full pyramid(pascals triangle)
 n=5
@@ -326,6 +326,21 @@ A B C D E D C B A
   A B C B A 
    A B A 
      A 
+# medium question
+n=5
+for i in range(n):
+    for j in range(i):
+        print(" ",end="")
+    start=65+n-i-1
+    for j in range(n-i):
+        print(chr(start-j),end="")
+    print()
+output:
+E D C B A 
+  D C B A 
+    C B A 
+      B A 
+        A 
 
 
         
