@@ -341,6 +341,21 @@ E D C B A
     C B A 
       B A 
         A 
-
+# hard question
+=5
+for i in range(n):
+    for j in range(i):
+        print(" ",end="")
+    for j in range(i,n):
+        print(chr(65+j),end="")
+    for j in range(n-2,i-2,-1):
+        print(chr(65+j),end="")
+    print()
+output
+ABCDEDCBA@
+ BCDEDCBA
+  CDEDCB
+   DEDC
+    ED
 
         
